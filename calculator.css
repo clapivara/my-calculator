@@ -1,0 +1,49 @@
+body {
+  background: url('bdo.png') center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+  overflow: hidden;
+}
+
+.calculator-container {
+  border: 1px solid #000000;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 400px;
+  height: 500px;
+  padding: 20px;
+  background-color: rgba(182, 72, 247, 0.7);
+  background-image: url('1.jpg');
+  background-size: cover;
+  background-position: center;
+  margin-top: 30px;
+  overflow: auto;
+}
+
+.calculator-display {
+  width: 96%;
+  height: 10%;
+  padding: 10px;
+  font-size: 35px;
+  margin-bottom: 10px;
+}
+
+.button-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
+.button-grid button {
+  font-size: 35px;
+  padding: 15px;
+  background-color: #048eff;
+  color: #000000;
+}
+
+.button-grid button.span-3 {
+  grid-column: span 3;
+}
